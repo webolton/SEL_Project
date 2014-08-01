@@ -14,6 +14,9 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+
+    <!--Using Media Queries, if the viewport is smaller than 700px use another stylesheet-->
+    <link rel="stylesheet" type="text/css" media="all" href="css/hamburger.css" />
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
@@ -25,29 +28,227 @@
 
 
 <div id="header">
-    <img src="/Users/williambolton/Desktop/html5-boilerplate-4.3.0/img/banner.png" alt="The Digital South English Legendary: An Interactive Digital Edition and Scholarly Resource" id="header_image">
+    <img src="/Users/williambolton/Desktop/Digital_SEL/img/banner.png" alt="The Digital South English Legendary: An Interactive Digital Edition and Scholarly Resource" id="header_image">
 </div>
+<div id="moving-content-pad"></div>
+<div id="moble-header">The Digital South English Legendary</div>
     <nav id="nav">
     <div id="right-header"><b>The Digital South English Legendary</b></div>
         <ul class="menu">
             
-            <a href="/Users/williambolton/Desktop/html5-boilerplate-4.3.0/index.html"><li>Home</li></a>
+            <a href="/Users/williambolton/Desktop/Digital_SEL/index.html"><li>Home</li></a>
             
-            <a href="/Users/williambolton/Desktop/html5-boilerplate-4.3.0/about.html"><li>About</li></a>
+            <a href="/Users/williambolton/Desktop/Digital_SEL/about.html"><li>About</li></a>
             
-            <a href="/Users/williambolton/Desktop/html5-boilerplate-4.3.0/manuscript_contents.html"><li>Manuscript Contents</li></a>
+            <a href="/Users/williambolton/Desktop/Digital_SEL/manuscript_contents.html"><li>Manuscript Contents</li></a>
             
-            <a href="/Users/williambolton/Desktop/html5-boilerplate-4.3.0/texts.html"><li id="current_page_ul">View and Compare Texts</li></a>
+            <a href="/Users/williambolton/Desktop/Digital_SEL/texts.html"><li id="current_page_ul">View and Compare Texts</li></a>
             
-            <a href="/Users/williambolton/Desktop/html5-boilerplate-4.3.0/bibliography.html"><li>Bibliography</li></a>
+            <a href="/Users/williambolton/Desktop/Digital_SEL/bibliography.html"><li>Bibliography</li></a>
             
-            <a href="/Users/williambolton/Desktop/html5-boilerplate-4.3.0/education.html"><li>Education</li></a>
-
+            <a href="/Users/williambolton/Desktop/Digital_SEL/education.html"><li>Education</li></a>
         </ul>
     </nav>
-    <div id="just-for-testing" style="height:5000px;">&nbsp;</div>
+    <div id="wrapper">
+  <h1>Saint Botulf Printer</h1>
+<div id="tabContainer">
+  <div class="tabs">
+    <ul>
+      <li id="tabHeader_1">Printer</li>
+      <li id="tabHeader_2">Second Text</li>
+      <li id="tabHeader_3">Empty Tab</li>
+    </ul>
+  </div>
+  <div class="tabscontent">
+    <div class="tabpage" id="tabpage_1">
+        <p>This widget will "print" two versions of the SEL life of Saint Botulf. One will appear on this page, and the other will appear under the "second text" tag. Fist turn it on, second type "cats" into the Wifi Password field, and third put a number into the toner level field. Last, click the Print button.<p>
+      <div id="onOff">
+            <form action="" method="GET" name="buttonPanel">
+               On switch: 
+                <input type="radio" name="printerOn" value="On" id="onButton"> ON<br>
+               Wifi Password:
+                <input type="password" id="wifiPassword" value="Password"><br>
+               Toner Level:
+               <input type="text" id="tonerLevel" value=>
+              <h4>Printer Messages</h4>
+            <div id="printerMessages"></div>
+        </div>
 
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+         <div id="printerButton">
+            <form action="" method="GET">
+               <button type="button" id="printButton">PRINT!</button>
+            </form>
+         </div>
+         <div id="printContainer">
+           <div type="folio" id="161r">
+              <p id="e_1"><strong id="ornate capital">S</strong>eint <span type="name">Botulf</span> &#254;e holi monk . and <span type="name">Adulf</span> is bro&#254;<abbr>er</abbr></p>
+              <p id="e_2">Ibore were in <span type="place">engelond</span> . as is mani ano&#254;er .</p>
+              <p id="e_3">Hi bigonne bo&#254;e &#541;onge . to ech godnesse drawe</p>
+              <p id="e_4">And at o conseil were bo&#254;e . to louie godes lawe .</p>
+              <p id="e_5">So &#254;at hi nome to rede . ou<abbr>er</abbr> &#254;e see to wende</p>
+              <p id="e_6">To lerne bet of godeslore . as our<abbr>e</abbr> lord he<abbr>m</abbr> wolte sende</p>
+              <p id="e_7">Bi&#541;ende &#254;e see hi wenden . &amp; longe leueden &#254;ere</p>
+              <p id="e_8">In an hous of ordre . among monkes hi were .</p>
+              <p id="e_9">Vorto lerne &#254;e ordre ari&#541;t . &#254;at no defaute nere .</p>
+              <p id="e_10">Here gode los vaste sprong . vram &#541;ere to &#541;ere .</p>
+              <p id="e_11">So &#254;at &#254;e king of &#254;e lond . preisede her<abbr>e</abbr> lif vaste</p>
+              <p id="e_12">Vor her<abbr>e</abbr> grete holinesse . his herte vpon he<abbr>m</abbr> he caste .</p>
+              <p id="e_13">&#222;e eldore bro&#254;<abbr>er</abbr> he made &#254;<abbr>er</abbr> . bischop seint <span type="name">adolf</span></p>
+              <p id="e_14">And al so he &#254;ou&#541;te . to make seint <span type="name">Botulf</span> .</p>
+              <p id="e_15">Ac seint <span type="name">Botulf</span> &#254;ou&#541;te nou&#541;t . &#254;<abbr>er</abbr>e longe astonde</p>
+              <p id="e_16">He wilnede do is ordre . at hom in <span type="place">engelonde</span> .</p>
+              <p id="e_17">&#222;o is bro&#254;<abbr>er</abbr> bischop was . he nom leue to wende</p>
+              <p id="e_18">To is ordre to <span type="place">engelond</span> . &amp; &#254;<abbr>er</abbr> is lif to ende .</p>
+              <p id="e_19">And bede hir<abbr>e</abbr> merci of hir<abbr>e</abbr> gult . &amp; were iknowe anon .</p>
+              </div>
+              <div type="folio" id="161v">
+              <p id="e_20">In &#254;e hous &#254;<abbr>a</abbr>t he was inne . twei sostren &#254;<abbr>er</abbr> were</p>
+              <p id="e_21">Of <span type="place">engelonde</span> iboren her . &#254;at longe hedden be &#254;ere .</p>
+              <p id="e_22">&#222;e kinges sostren <span type="place">a&#254;elwolde</span> . &#254;at as ich vnderstonde .</p>
+              <p id="e_23">King was &#254;o of &#254;e sou&#254; . ende of <span type="place">engelonde</span> .</p>
+              <p id="e_24">&#222;es sostren beden seint <span type="name">Botulf</span> . &#254;<abbr>a</abbr>t he to her<abbr>e</abbr> bro&#254;<abbr>er</abbr> wende</p>
+              <p id="e_25">&amp; to dame sware &#254;e quene . &amp; lettres to him hi sende .</p>
+              <p id="e_26">&#222;<abbr>a</abbr>t he g<abbr>ra</abbr>ntede &#254;is holi mon . in som stude aplace</p>
+              <p id="e_27">Whare he mi&#541;te an ordre biginne . &#254;orw owr<abbr>e</abbr> lordes grace .</p>
+              <p id="e_28">&#222;is holi mon seint <span type="name">Botulf</span> . to <span type="place">engelonde</span> wende</p>
+              <p id="e_29">And bitok hem &#254;e lettres . &#254;at me hem sende .</p>
+              <p id="e_30">&#222;e king it wi&#254;sede . &amp; nolde it g<abbr>ra</abbr>nte nou&#541;t</p>
+              <p id="e_31">Ac &#254;e quene &#254;at was god . turnde anon his &#254;ou&#541;t .</p>
+              <p id="e_32">Vor wimmen be&#254; e&#254;e . to ech godnesse to bringe</p>
+              <p id="e_33">Heo criede bo&#254;e ni&#541;t and da&#7823; . on hir<abbr>e</abbr> lord &#254;e kinge .</p>
+              <p id="e_34">&#222;o heo ne mi&#541;te &#254;<abbr>er</abbr> of . habbe non o&#254;<abbr>er</abbr> grace</p>
+              <p id="e_35">Seint <span type="name">botulf</span> bad atelaste . g<abbr>ra</abbr>nten hi<abbr>m</abbr> aplace .</p>
+              <p id="e_36">Somwhar<abbr>e</abbr> in som wildernesse . &#254;<abbr>a</abbr>t nomon ne knewe</p>
+              <p id="e_37">Ne &#254;<abbr>er</abbr> treo ne fruit . ne no god on ne grewe .</p>
+              <p id="e_38">&#222;e king g<abbr>ra</abbr>ntede hi<abbr>m</abbr> . to bileue in such an ende</p>
+              <p id="e_39">&#222;o he sei&#541; &#254;at hit nolde . to noni harm him wende .</p>
+              <p id="e_40">&#182; A stude p<abbr>er</abbr> was in wildernesse . &#254;<abbr>a</abbr>t nomon com &#254;<abbr>er</abbr> for ei&#541;e</p>
+              <p id="e_41">&#222;<abbr>a</abbr>t was fol of lu&#254;e<abbr>r</abbr>e &#254;inges . &#254;is man &#254;<abbr>a</abbr>t hi bisei&#541;e .</p>
+              <p id="e_42">Vor deuelen &amp; lu&#254;<abbr>r</abbr>e gostes . her<abbr>e</abbr> ese hadden &#254;ere</p>
+              <p id="e_43">And woneden &#254;<abbr>er</abbr> at wille . vor none men &#254;<abbr>er</abbr> nere .</p>
+              <p id="e_44">&#182; &#222;o to seint <span type="name">Botulf</span> . &#254;is stude ig<abbr>ra</abbr>nted was</p>
+              <p id="e_45">Baldeliche he wende &#254;ider . agast no&#254;ing he nas .</p>
+              <p id="e_46">He wende to chese him astude . whar inne he mi&#541;te be</p>
+              <p id="e_47">&#222;o &#254;e deuelen sei&#541;en him come . hi bigonne to vleo .</p>
+              <p id="e_48">And bigo<abbr>n</abbr>nne to crie . &amp; grisliche to grede</p>
+              <p id="e_49">&#182; <span type="name">Botulf</span> what woltou her . what is vs to rede .</p>
+              <p id="e_50">&#222;is ha&#254; beo &#541;ar<abbr>e</abbr> our<abbr>e</abbr> hom . we wenden siker to beo</p>
+              <p id="e_51">As in our<abbr>e</abbr> owe til domes da&#7823; . we nute whoder to fleo .</p>
+              <p id="e_52">&#222;<abbr>u</abbr> art to vs alu&#254;<abbr>er</abbr> gist . &amp; astrong also</p>
+              <p id="e_53">Whi woltou vs henne driue . we nabbe&#254; &#254;e nou&#541;t mis do .</p>
+              <p id="e_54">&#254;<abbr>u</abbr> hast beo in murie studes . &amp; in ioiful inow</p>
+              <p id="e_55">And &#254;is is so wrecchede her . me &#254;inke&#254; &#254;ou hast wow .</p>
+              <p id="e_56">What woltow do here . whan &#254;ou mi&#541;t in betre beo</p>
+              <p id="e_57">We ne dore &#254;e nou&#541;t abide . henne we mote vleo .</p>
+              <p id="e_58">&#182; Seint <span type="name">Botulf</span> in our<abbr>e</abbr> lordes name . wende for&#254; anon</p>
+              <p id="e_59">Baldeliche as in is owe . &#254;e deueles vlowe echon .</p>
+              <p id="e_60">Seint <span type="name">Botulf</span> in our<abbr>e</abbr> lordes name . of a lu&#254;<abbr>er</abbr> place &#254;e<abbr>r</abbr></p>
+              <p id="e_61">An holi abbei of monkes . he let sone arere .</p>
+              <p id="e_62">&amp; nom monkes to hi<abbr>m</abbr> . &amp; a gret couent inow</p>
+              </div>
+              <div type="folio" id="162r">
+              <p id="e_63">Him self was abbot . and to lif  hem drow .</p>
+              <p id="e_64">Of &#254;<abbr>a</abbr>t ilke woning . &#254;e deueles he out caste</p>
+              <p id="e_65">He made &#254;<abbr>er</abbr> an holi stude . &#254;<abbr>a</abbr>t longo [sic] schal ilaste .</p>
+              <p id="e_66">&#254;<abbr>er</abbr> in our<abbr>e</abbr> lordes name . his lif he brou&#541;te to ende</p>
+              <p id="e_67">And to &#254;e blisse of heuene . is soule gan &#254;enne wende .</p>
+              <p id="e_68">How god for &#254;e loue of him . his swete grace vs sende</p>
+              <p id="e_69">&#222;<abbr>a</abbr>t we mote to &#254;e ioie come . &amp; so &#254;e deueles schende. Amen</p>
+            </div>
+         </div>
+    </div>
+    <div class="tabpage" id="tabpage_2">
+      <div id="printContainer2">
+            <div type="folio" id="305v">
+            <h2>Shazam! Will does internet!</h2>
+              <p id="b_1"><strong id="rubricated">S</strong><abbr>ein</abbr>t <span type="name">botolf</span> &#254;e holy monk &#61793; &amp; ek his bro&#254;<abbr>er</abbr></p>
+              <p id="b_2">bor<abbr>e</abbr> wer<abbr>e</abbr> &#237;n <span type="place">in<abbr>n</abbr>gelond</span> &#61793; as &#237;s many an o&#254;<abbr>er</abbr></p>
+              <p id="b_3">&#254;ey be gonne bo&#254;e &#541;ong &#61793; to ech goodnesse drawe</p>
+              <p id="b_4">and at on conseyl &#254;ey wer<abbr>e</abbr> bo&#254;e &#61793; to loue god<abbr>is</abbr> lawe</p>
+              <p id="b_5">so &#254;at &#254;ey nome hem to reed &#61793; ou<abbr>er</abbr> &#254;e se to wende</p>
+              <p id="b_6">to lerne bet of god<abbr>is</abbr> lor<abbr>e</abbr> &#61793; as our<abbr>e</abbr> lord hem wold sende</p>
+              <p id="b_7">be &#541;&#237;nde &#254;e see &#254;ey wente anon &#61793; &amp; longe wonyd &#254;er<abbr>e</abbr></p>
+              <p id="b_8">jn an hous of ordre &#61793; among monk<abbr>is</abbr> &#254;ey wer<abbr>e</abbr></p>
+              <p id="b_9">&#182; for to lerne &#254;e ordr<abbr>e</abbr> ary&#541;t &#61793; &#254;at no defaute ner<abbr>e</abbr></p>
+              <p id="b_10">her<abbr>e</abbr> good los faste sprong &#61793; fro &#541;er to &#541;er<abbr>e</abbr></p>
+              <p id="b_11">so &#254;<abbr>a</abbr>t &#254;e king of &#254;e lond &#61793; pr<abbr>e</abbr>ysyd her<abbr>e</abbr> lyf fast</p>
+              <p id="b_12">&amp; for her<abbr>e</abbr> gr<abbr>e</abbr>te holynes &#61793; vppon hem h&#237;s hert hert cast</p>
+              <p id="b_13">&#254;e elder he made &#254;er &#61793; bysschop se&#237;nt <span type="name">adolf</span></p>
+              <p id="b_14">&amp; whan he sey h&#237;s tyme &#61793; he &#254;ou&#541;t on se&#237;nt <span type="name">botolf</span></p>
+              <p id="b_15">&amp; se&#237;nt <span type="name">botolf</span> ne &#254;ou&#541;te nou&#541;t &#61793; &#254;<abbr>er</abbr> wel longe astonde</p>
+              <p id="b_16">he desyr&#237;d to do h&#237;s ordr<abbr>e</abbr> &#61793; at hom &#237;n <span type="place">ingelonde</span></p>
+              <p id="b_17">&#182; &#254;o h&#237;s bro&#254;<abbr>er</abbr> bysschop was &#61793; h&#237;s leue he &#237;nom to wend</p>
+              <p id="b_18">jn to an ord&#237;re &#237;n <span type="place">&#237;ngelond</span> &#61793; &amp; &#254;er h&#237;s lyf end</p>
+              <p id="b_19">jn &#254;e hous &#254;<abbr>a</abbr>t he &#237;n was &#61793; twey sostr&#237;n &#254;er wer<abbr>e</abbr></p>
+              <p id="b_20">bor<abbr>e</abbr> her &#237;n <span type="name">&#237;ngelond</span> &#61793; &#254;<abbr>a</abbr>t &#541;ar<abbr>e</abbr> hadde be &#254;er<abbr>e</abbr></p>
+              <p id="b_21">&#254;e king<abbr>is</abbr> soustr<abbr>i</abbr>n <span type="name">a&#254;elmound</span> &#61793; as j ond<abbr>er</abbr> stond</p>
+              <p id="b_22">kyng was &#254;at tyme &#61793; of &#254;e sou&#254; end of <span type="place">&#237;ngelond</span></p>
+              <p id="b_23">&#254;ese sustr&#237;n bede se&#237;nt <span type="name">botolf</span> &#61793; &#254;<abbr>a</abbr>t her<abbr>e</abbr> bro&#254;<abbr>er</abbr> wende</p>
+              <p id="b_24">&amp; to dame <span type="name">sywas</span> &#254;e quen &#61793; let<abbr>er</abbr>is to bo&#254;e hem sende</p>
+              <p id="b_25">&#182; &#254;at &#254;ey g<abbr>ra</abbr>ntid &#254;&#237;s holy man &#61793; &#237;n sum stede aplace</p>
+              <p id="b_26">Wher &#237;n he my&#541;t an holy ordr<abbr>e</abbr> &#61793; be gy<abbr>n</abbr>ne &#254;orw god<abbr>is</abbr> g<abbr>ra</abbr>ce</p>
+              <p id="b_27">&#254;&#237;s holy man seyn <span type="name">botolf</span> &#61793; to &#254;e k&#237;ng wende</p>
+              <p id="b_28">&amp; tok &#254;e king &amp; &#254;e quen &#61793; &#254;<abbr>e</abbr> let<abbr>er</abbr>is &#254;at me<abbr>n</abbr> hym sende</p>
+              <p id="b_29">&#254;e k&#237;ng &#237;t w<abbr>i</abbr>t seyde anon &#61793; &amp; wernyd her<abbr>e</abbr> &#254;ou&#541;t</p>
+              <p id="b_30">ac &#254;e quene &#254;<abbr>a</abbr>t was eu<abbr>er</abbr>e good &#61793; &#541;he dede nou&#541;t</p>
+              <p id="b_31">For wemen be&#254; good &amp; e&#254;e &#61793; to ech goodnesse br&#237;ng</p>
+              <p id="b_32">&#541;he c<abbr>r</abbr>id bo&#254;e ny&#541;t &amp; day &#61793; on her<abbr>e</abbr> lord &#254;e k&#237;ng</p>
+              <p id="b_33">&#182; &#254;o &#254;ey my&#541;t of &#254;&#237;s k&#237;ng &#61793; haue non o&#254;<abbr>er</abbr> grace</p>
+              <p id="b_34">se&#237;nt <span type="name">botolf</span> bad hy<abbr>m</abbr> at &#254;e last &#61793; g<abbr>ra</abbr>nt hy<abbr>m</abbr> aplace</p>
+              <p id="b_35">sumwher &#237;n w&#237;ld&#237;rnesse &#61793; &#254;<abbr>er</abbr> no good ne grew</p>
+              <p id="b_36">ne &#254;<abbr>er</abbr> men tel&#237;d ne frut &#61793; ne no god sew</p>
+              <p id="b_37">&#254;e k&#237;ng g<abbr>ra</abbr>nt&#237;d hy<abbr>m</abbr> to be leue &#61793; sumwher &#237;n soch an ende</p>
+              <p id="b_38">&#254;o he sey &#254;<abbr>a</abbr>t &#237;t nold &#61793; to non harm hym wende</p>
+              <p id="b_39">astede &#254;at was al w&#237;ld&#237;rnes &#61793; &#254;<abbr>a</abbr>t me clep&#237;d &#254;o &#254;orney</p>
+              <p id="b_40">&#254;at ful was of &#254;ing<abbr>is</abbr> le&#254;<abbr>er</abbr> &#61793; &#254;&#237;s mon hym be sey</p>
+              <p id="b_41">&#182; for fend<abbr>is</abbr> &amp; le&#254;<abbr>er</abbr> gost<abbr>is</abbr> &#61793; her<abbr>e</abbr> ese hadde alle &#254;ar<abbr>e</abbr></p>
+              <p id="b_42">&amp; her<abbr>e</abbr> wonyng o&#254;<abbr>er</abbr> whyle &#61793; for no men &#254;<abbr>er</abbr> nar<abbr>e</abbr></p>
+              <p id="b_43">&#254;o seynt <span type="name">botolf</span> &#254;&#237;s holy mon &#61793; &#254;<abbr>a</abbr>t stede grau<abbr>n</abbr>t&#237;d was</p>
+              <p id="b_44">boldel&#237;che he wente &#254;edir &#61793; agast no &#254;&#237;ng he nas</p>
+              <p id="b_45">he went to seche hym afayr stede &#61793; wher &#237;n he my&#541;t be</p>
+              <p id="b_46">&#254;e deuel&#237;n &#254;o &#254;ey sey hym come &#61793; be gan anon to fle</p>
+              <p id="b_47">&amp; w<abbr>i</abbr>t sorw&#541; go<abbr>n</abbr>ne &#541;elle &amp; cry&#541;e &#61793; &amp; wel grisly grede</p>
+              <p id="b_48"><span type="name">botolf</span> <span type="name">botolf</span> what dostow&#541; her &#61793; what &#237;s vs now&#541; to r<abbr>e</abbr>de</p>
+              <p id="b_49">&#182; acorss&#237;d wor&#254; &#254;ilke god &#61793; &#254;<abbr>a</abbr>t &#254;ed&#237;r &#254;e gan lede</p>
+              <p id="b_50">For we net&#237;&#254; wher be leue now &#61793; bicc&#237;n sorw&#541; &amp; wr<abbr>e</abbr>chede</p>
+            </div>
+            <div type="folio" id="306r">
+              <p id="b_51">&#254;&#237;s ha&#254; be &#541;ar<abbr>e</abbr> our<abbr>e</abbr> ry&#541;t hom &#61793; &amp; wend her syk&#237;r haue be</p>
+              <p id="b_52">as &#237;n our<abbr>e</abbr> oune t&#237;l dom<abbr>is</abbr> day &#61793; but now nyte we whod&#237;r fle</p>
+              <p id="b_53">&#182; &#254;ow art to vs a ly&#254;<abbr>er</abbr> gest &#61793; &amp; to strong al oo</p>
+              <p id="b_54">why woldistou vs henne dryue &#61793; we ne haue &#254;<abbr>e</abbr> nou&#541;t mysdo</p>
+              <p id="b_55">&#254;ou hast ofte be &#237;n mery stede &#61793; joyful &amp; cler jnow&#541;</p>
+              <p id="b_56">&amp; a derk place &#254;&#237;s &#237;s &#61793; her<abbr>e</abbr> me &#254;&#237;nke&#254; &#254;<abbr>u</abbr> hast wow&#541;</p>
+              <p id="b_57">what wolt &#254;ou &#237;n our<abbr>e</abbr> wr<abbr>e</abbr>cche stede &#61793; whan &#254;<abbr>u</abbr> myht bet<abbr>er</abbr> be</p>
+              <p id="b_58">ac we ne dorr<abbr>e</abbr> &#254;e nou&#541;t abyde &#61793; we moot he&#254;&#237;n fle</p>
+              <p id="b_59">he was to hem a ly&#254;&#237;r gest &#61793; non harm &#237;t was w&#237;t alle</p>
+              <p id="b_60">he mi&#541;t mi&#541;t segge as me sey&#254; &#237;n game &#61793; newe k&#237;ng &#237;n halle</p>
+              <p id="b_61">&#182; se&#237;nt <span type="name">botolf</span> &#237;n our<abbr>e</abbr> lord<abbr>is</abbr> name &#61793; wente for&#254; anon</p>
+              <p id="b_62">wel baldel&#237;che as &#237;n h&#237;s owe &#61793; &#254;e fend<abbr>is</abbr> flowe echon</p>
+              <p id="b_63">now a deu&#237;lwey moot hy fle &#61793; fro nor&#254; &amp; fro sou&#254;</p>
+              <p id="b_64">amen alle segge &#541;e &#61793; why ne ope &#541;e &#541;our<abbr>e</abbr> mou&#254;</p>
+              <p id="b_65">seynt <span type="name">botolf</span> made an holy plas &#61793; of a wikk&#237;d stede &#254;er<abbr>e</abbr></p>
+              <p id="b_66">an abbey of monk&#237;s &#61793; he leet &#254;<abbr>er</abbr> arer<abbr>e</abbr></p>
+              <p id="b_67">&amp; nom monk<abbr>is</abbr> &#237;n to hym &#61793; &amp; gr<abbr>e</abbr>t couent made j now&#541;</p>
+              <p id="b_68">&amp; hy<abbr>m</abbr> self her<abbr>e</abbr> abot was &#61793; &amp; to holy lyf hem drow&#541;</p>
+              <p id="b_69">&amp; of her<abbr>e</abbr> oune wony&#237;ng &#61793; &#254;e fend<abbr>is</abbr> out cast</p>
+              <p id="b_70">&amp; made &#254;er an holy stede &#61793; &#254;<abbr>a</abbr>t longe schal last</p>
+              <p id="b_71">&amp; &#254;<abbr>er</abbr> &#237;n our<abbr>e</abbr> lord<abbr>is</abbr> name &#61793; h&#237;s lyf he brou&#541;t to ende</p>
+              <p id="b_72">&amp; to &#254;e blysse of heuene &#61793; h&#237;s soule gan he<abbr>n</abbr>ne wende</p>
+              <p id="b_73">Now god for seynt <span type="name">botolf</span> &#237;s loue &#61793; sech grace vs sende</p>
+              <p id="b_74">&#254;at we to &#254;ilke &#237;oy&#541;e come &#61793; &amp; so &#254;e deu&#237;l schende |Ame<abbr>n</abbr>|</p>
+            </div>
+          </div>
+      <div id="prePrintMessage">
+      <h2>Nothing here yet! Go click print in the other tab and come back for some rad Middle English.</h2>
+      </div>
+    </div>
+    <div class="tabpage" id="tabpage_3">
+        <h2>Nothing to see here!</h2>
+      
+    </div>
+      </div>
+    </div>   
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>

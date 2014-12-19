@@ -37,51 +37,59 @@ $(document).ready(function() {
 });
 
 
-// Display Text Widget //
-var button= document.getElementById("displayTextButton");
+/// Multi-Text Display Text Widget, developed by William E. Bolton, PhD. //
+
+// Assign Task to Button //
+var button = document.getElementById("displayTextButton");
 button.addEventListener("click", handleClick);
 
 $("#botulfSelector").submit(function(event) {
     event.preventDefault();
 });
 
+
+// Multi-Text Loader //
 function handleClick() {
-    // Get all the inputs.
-    var inputs = form1.elements;
-    var radios = [];
 
-    //Loop and find only the Radios
-    for (var i = 0; i < inputs.length; ++i) {
-        if (inputs[i].type == 'radio') {
-            radios.push(inputs[i]);
+    // Resets the text area in anticipation changes in the form //
+    $("#resetMessage").empty();
+    $("#contentArea").empty();
+
+    // Checks to see if checkboxes are checked //
+    if ($("#botulfSelector :checkbox:checked").length == 0) {
+        
+        $("#contentArea").html("<div id='resetMessage'><h3>Please select a saint's life from the menu to the left.</h3></div>");
+        return;
+
+    } else {
+
+        // Pushes URLs of texts to an array //
+        var chkArray = [];
+        var idArray = [];
+
+        $("#botulfSelector input:checked").each(function() {
+            chkArray.push($(this).val());
+            idArray.push($(this).attr("id")); //Might be useful for adding information to the text divs //
+        });
+
+        // Loops through the array with the text URLS, appends the DOM, and loads the text to new divs //
+        for (i = 0; i < chkArray.length; i++) {
+ 
+            $("#contentArea").append("<div id='" + (chkArray[i]) + "'class='saintTextBox'></div>");
+
+            var textBox = document.getElementById(chkArray[i]);
+
+            $(textBox).load(chkArray[i]);
         };
     };
-
-    var found = 1;
-    for (var i = 0; i < radios.length; i++) {
-        if (radios[i].checked) {
-            var storedText = (radios[i].value);
-            $("#contentArea").hide();
-            $("#contentArea").load(storedText, function() {
-                $("#contentArea").slideDown(500);
-            });
-            found = 0;
-            break;
-            };
-        };
-    if (found == 1) {
-    $("#contentArea").html("<h3>Please select a saint&rsquo;s life from the menu to the left.</h3>");
-    return;
-    };
-    return false; // prevent further bubbling of event //
 };
 
 //Display Text Reset Button //
-
 $("#displayTextReset").click(function(){
+
     $("#botulfSelector")[0].reset();
-    $("#contentArea").html("<h3>Please select a saint&rsquo;s life from the menu to the left.</h3>");
+
+    $("#contentArea").html("<div id='resetMessage'><h3>Please select a saint's life from the menu to the left.</h3></div>");
+
+    return;
 });
-
-
-

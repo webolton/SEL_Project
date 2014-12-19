@@ -96,25 +96,33 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* Basic Page Attribute */
+
+.pageFooter {
+  color: grey;
+  font-size: 15px;
+  text-align: center;
+}
+
 
 /* Header */
 #header {
     background: #f9f9f9;
     width: 100%;
-    padding-right: 5.5em;
+    padding-right: 10em;
 }
 
 #header_image {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 5.5em;
+    margin-right: 5.5em;
     background: #f9f9f9;
 }
 
 /* Nav-Bar */
 nav {
-    font-size: 1.1em;
-    padding-left: 5em;
+    font-size: 1em;
+    padding-left: 10em;
     text-align: left;
     text-transform: none;
     width: 100%;
@@ -129,7 +137,7 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    padding: 10px 15px;
+    padding: 6px 10px;
     text-decoration: none;
     color: #fff;
 }
@@ -187,188 +195,331 @@ nav ul li:hover {
     border:none !important;
 }
 
-#homeInfo {
+.basicPageWrapper {
     padding-left: 50px;
     max-width: 900px;
 }
 
-/* tabs */
-#wrapper {
-    width: 100%;
-    padding-left: 70px;
+/* Expandable List */
+#listContainer{
+  margin-top:15px;
 }
 
-#wrapper > h1 {
-    color: black;
-    text-align: left;
-    margin:20px;
-}
-
-#wrapper > a {
-    display: block;
-    font-size: 1.2em;
-    padding-top: 20px;
-    color: #FFF;
-    text-decoration: none;
-    text-align: center;
-}
-
-.one {
-    width: 1000px;
-    padding: 10px;
-    background-color: #2e2e2e;
-    -moz-border-radius: 4px;
-    border-radius: 4px; 
-}
-
-.one > .tabs {
-    height: 30px;
-    padding-bottom: 20px;
-    overflow: hidden;
-}
-
-.one > .tabs > ul {
-    font: 1em;
-    list-style:none;
-}
-
-.one > .tabs > ul > li {
-    margin: 0 2px 0 0;
-    padding: 7px 10px;
-    display: block;
-    float: left;
-    color: #FFF;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    -moz-border-radius-topleft: 4px;
-    -moz-border-radius-topright: 4px;
-    -moz-border-radius-bottomright: 0px;
-    -moz-border-radius-bottomleft: 0px;
-    border-top-left-radius:4px;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px; 
-    background: #C9C9C9; /* old browsers */
-    background: -moz-linear-gradient(top, #0C91EC 0%, #257AB6 100%); /* firefox */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0C91EC), color-stop(100%,#257AB6)); /* webkit */
-}
-
-.one > .tabs > ul > li:hover{
-    background: #FFFFFF; /* old browsers */
-    background: -moz-linear-gradient(top, #FFFFFF 0%, #F3F3F3 10%, #F3F3F3 50%, #FFFFFF 100%); /* firefox */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(10%,#F3F3F3), color-stop(50%,#F3F3F3), color-stop(100%,#FFFFFF)); /* webkit */
-    cursor:pointer;
-    color: #333;
-}
-
-.one > .tabs > ul > li.tabActiveHeader{
-    background: #FFFFFF; /* old browsers */
-    background: -moz-linear-gradient(top, #FFFFFF 0%, #F3F3F3 10%, #F3F3F3 50%, #FFFFFF 100%); /* firefox */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(10%,#F3F3F3), color-stop(50%,#F3F3F3), color-stop(100%,#FFFFFF)); /* webkit */
-    cursor:pointer;
-    color: #333;
-}
-
-.one > .tabscontent {
-    -moz-border-radius-topleft: 4px;
-    -moz-border-radius-topright: 4px;
-    -moz-border-radius-bottomright: 4px;
-    -moz-border-radius-bottomleft: 4px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px; 
-    padding:10px 10px 25px;
-    background: #FFFFFF; /* old browsers */
-    background: -moz-linear-gradient(top, #FFFFFF 0%, #FFFFFF 90%, #e4e9ed 100%); /* firefox */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(90%,#FFFFFF), color-stop(100%,#e4e9ed)); /* webkit */
+#expList ul, li {
+    list-style: none;
     margin:0;
-    color:#333;
+    padding:0;
+    cursor: pointer;
+}
+#expList p {
+    margin:0;
+    display:block;
+}
+#expList p:hover {
+    background-color:#121212;
+}
+#expList li {
+    line-height:140%;
+    text-indent:0px;
+    background-position: 1px 8px;
+    padding-left: 20px;
+    background-repeat: no-repeat;
 }
 
-
-/* Laser Printer Styles */
-
-#onOff {
-    border: 2px solid #a1a1a1;
-    width: 890px;
-    min-height: 175px;
-    border-radius: 25px;
-    padding: 30px 40px;
+/* Collapsed state for list element */
+#expList .collapsed {
+    background-image: url(../img/collapsed.png);
+}
+/* Expanded state for list element
+/* NOTE: This class must be located UNDER the collapsed one */
+#expList .expanded {
+    background-image: url(../img/expanded.png);
+}
+#expList {
+    clear: both;
 }
 
-#printerMessages {
-    float: left;
-    vertical-align: top;
-    border: 2px solid #a1a1a1;
-    padding-top: 13px;
-    padding-bottom: 40px;
-    padding-left: 17px;
-    background: black;
-    width: 300px;
-    max-height: 50px;
-    border-radius: 25px;
-    color: #0AE812;
-    font-family: sans-serif;
-    line-height: 100%;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
+.listControl{
+  margin-bottom: 15px;
+}
+.listControl a {
+    border: 1px solid #555555;
+    color: #555555;
+    cursor: pointer;
+    height: 1.5em;
+    line-height: 1.5em;
+    margin-right: 5px;
+    padding: 4px 10px;
+}
+.listControl a:hover {
+    background-color:#555555;
+    color:#222222; 
+    font-weight:normal;
 }
 
-#wifiPassword {
-    margin-top: 12px;
-    width: 50px;
+/* Middle English Text Styles ****REMOVE .. in path to font on site*** */
+@font-face {
+    font-family: Junicode;
+    font-weight:normal;
+    font-style:normal;
+    src: url("/fonts/Junicode.woff") format("woff"),
+    url("/fonts/Junicode-Regular.eot") format("eot");
 }
 
-#tonerLevel {
-    margin-top: 12px;
-    width: 50px;
+@font-face {
+    font-family: Junicode;
+    font-weight:bold;
+    font-style:normal;
+    src: url("/fonts/Junicode-Bold.woff") format("woff"),
+    url("/fonts/Junicode-Bold.eot") format("eot");
 }
 
-h4 {
-  padding-top: 10px;
-  padding-bottom: 0px;
+@font-face {
+    font-family:Junicode;
+    font-weight:normal;
+    font-style:italic;
+    src: url("/fonts/Junicode-Italic.woff") format("woff"),
+    url("/fonts/Junicode-Italic.eot") format("eot");
+}
+
+@font-face {
+    font-family:Junicode;
+    font-weight:bold;
+    font-style:italic;
+    src: url("/fonts/Junicode-BoldItalic.woff") format("woff"),
+    url("/fonts/Junicode-BoldItalic.eot") format("eot");
+}
+
+#textContainer {
+    font-family: Junicode;
+}
+
+#textContainer span {
+    display: block;
+    -webkit-transition:  500ms ease-in-out;
+    -moz-transition:  500ms ease-in-out;
+    -o-transition:  500ms ease-in-out;
+    transition:  500ms ease-in-out;
+}
+
+#textContainer abbr {
+  font-style: italic;
+}
+
+#textContainer .upperMarginlNote {
+  padding-bottom: 15px;
+}
+
+.verseNumber {
+    float: right;
+    padding-left: 20px;
+}
+
+.folioNumber, .folioColumn {
+    float: right;
+    font-weight: bold;
+}
+
+/* Text Widget Menu Box */
+
+#TextSelectorHeading {
+  margin: 0px;
+  margin-bottom: 0px;
+}
+
+#TextSelectorDirections {
   margin: 0px;
 }
 
-#printerButton {
-    margin-top: 12px;
-    margin-bottom:12px;
+#displayButtonBox {
+  padding-left: 65px;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 
-#printContainer {
-    width: 975px;
-    height: auto;
-    vertical-align: top;
+
+/* Text Display Button */
+
+.displayTextButton, .displayTextReset{
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #007dc1), color-stop(1, #0061a7));
+  background:-moz-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+  background:-webkit-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+  background:-o-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+  background:-ms-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+  background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#007dc1', endColorstr='#0061a7',GradientType=0);
+  background-color:#007dc1;
+  -moz-border-radius:11px;
+  -webkit-border-radius:11px;
+  border-radius:11px;
+  border:1px solid #124d77;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family: sans-serif;
+  font-size:15px;
+  font-weight:bold;
+  padding:5px 13px;
+  text-decoration:none;
+}
+.displayTextButton:hover, .displayTextReset:hover {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0061a7), color-stop(1, #007dc1));
+  background:-moz-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+  background:-webkit-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+  background:-o-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+  background:-ms-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+  background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0061a7', endColorstr='#007dc1',GradientType=0);
+  background-color:#0061a7;
+}
+.displayTextButton:active, .displayTextReset:active {
+  position:relative;
+  top:1px;
+}
+
+/* Accordion Menu for Text Selection */
+
+.menuContainer {
+  padding: 10px;
+  padding-left: 70px;
+  width: 300px;
+  float: left;
+}
+
+.menuContainer > header > h1 {
+  margin-top: 0;
+  border-bottom: 1px solid #afafaf;
+}
+
+div.bellow > input[type='checkbox'] {
+  display: none;
+}
+
+div.bellow > label {
+    font-size: 1em;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    display: block;
+    background-color: #D50017;
+    border: 1px solid #d0d0d0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div.bellow > label:hover {
+  background-color: #9B0017;
+}
+
+div.bellow > input[type='checkbox']:checked + label {
+  background-color: #9B0017;
+  color: #fff;
+}
+div.bellow > div {
+  -webkit-transition: max-height 500ms ease-in-out;
+  -moz-transition: max-height 500ms ease-in-out;
+  -o-transition: max-height 500ms ease-in-out;
+  transition: max-height 500ms ease-in-out;
+  max-height: 0;
+  overflow: auto;
+  padding: 0 10px;
+}
+
+div.bellow > input[type='checkbox']:checked ~ div {
+  max-height: 500px;
+}
+
+/* Radio Buttons in Text Selector Widget */
+
+input[type=radio   ]:not(old){
+  width     : 2em;
+  margin    : 0;
+  padding   : 0;
+  font-size : 1em;
+  opacity   : 0;
+}
+
+input[name=saintRadio   ]:not(old) + label{
+  display      : inline-block;
+  margin-left  : -2em;
+  line-height  : 1.5em;
+}
+
+input[type=radio   ]:not(old) + label > span{
+  display          : inline-block;
+  width            : 0.875em;
+  height           : 0.875em;
+  margin           : 0.25em 0.5em 0.25em 0.25em;
+  border           : 0.0625em solid rgb(192,192,192);
+  border-radius    : 0.25em;
+  background       : rgb(224,224,224);
+  background-image :    -moz-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image :     -ms-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image :      -o-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image : -webkit-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image :         linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  vertical-align   : bottom;
+}
+
+input[type=radio   ]:not(old):checked + label > span{
+  background-image :    -moz-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :     -ms-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :      -o-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image : -webkit-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :         linear-gradient(rgb(224,224,224),rgb(240,240,240));
+}
+
+input[type=radio]:not(old):checked + label > span > span{
+  display          : block;
+  width            : 0.5em;
+  height           : 0.5em;
+  margin           : 0.125em;
+  border           : 0.0625em solid rgba(0,0,0,1);
+  border-radius    : 0.125em;
+  background       : rgb(153,204,102);
+  background-image :    -moz-linear-gradient(rgba(184, 184, 184, 1),rgba(102, 102, 102, 1));
+  background-image :     -ms-linear-gradient(rgba(184, 184, 184, 1),rgba(102, 102, 102, 1));
+  background-image :      -o-linear-gradient(rgba(184, 184, 184, 1),rgba(102, 102, 102, 1));
+  background-image : -webkit-linear-gradient(rgba(184, 184, 184, 1),rgba(102, 102, 102, 1));
+  background-image :         linear-gradient(rgba(184, 184, 184, 1),rgba(102, 102, 102, 1));
+}
+
+/* Content Area for Texts to Appear (not the container in the ME texts themselves)*/
+
+#contentAreaWrapper {
+    padding-top: 50px;
+    padding-bottom: 300px;
+    padding-left: 400px;
+}
+
+#contentArea {
+    float: left;
+    width: 600px;
+    min-height: 125px;
     border: 2px solid #a1a1a1;
-    padding: 10px 10px; 
     background: #FFF;
     border-radius: 25px;
     color: black;
     font-family: Junicode, serif;
-    line-height: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+   
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
 
-#printContainer2 {
-    width: 975px;
-    height: auto;
-    vertical-align: top;
-    border: 2px solid #a1a1a1;
-    padding: 10px 10px; 
-    background: #FFF;
-    border-radius: 25px;
-    color: black;
-    font-family: Junicode, serif;
-    line-height: 100%;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
+#contentArea > h3 {
 }
+
+.clear { 
+    clear: both;
+    padding-top: 200px;
+}
+
 
 /* Responsive Sizes */
 /* Tablet Lanscape Size */
@@ -717,86 +868,7 @@ nav ul li:hover {
     list-style:none;
 }
 
-#onOff {
-    border: none;
-    width: 350px;
-    min-height: 175px;
-    padding: 5px;
-    padding-bottom: 15px;
-}
 
-#printerMessages {
-    float: left;
-    vertical-align: top;
-    border: 2px solid #a1a1a1;
-    padding-top: 13px;
-    padding-bottom: 40px;
-    padding-left: 17px;
-    background: black;
-    width: 300px;
-    max-height: 50px;
-    border-radius: 25px;
-    color: #0AE812;
-    font-family: sans-serif;
-    line-height: 100%;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-}
-
-#wifiPassword {
-    margin-top: 12px;
-    width: 50px;
-}
-
-#tonerLevel {
-    margin-top: 12px;
-    width: 50px;
-}
-
-h4 {
-  padding-top: 10px;
-  padding-bottom: 0px;
-  margin: 0px;
-}
-
-#printerButton {
-    margin-top: 12px;
-    margin-bottom:12px;
-}
-
-#printContainer {
-    width: 415px;
-    height: auto;
-    vertical-align: top;
-    border: 2px solid #a1a1a1;
-    padding: 5px; 
-    background: #FFF;
-    border-radius: 25px;
-    color: black;
-    font-family: Junicode, serif;
-    line-height: 100%;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-}
-
-#printContainer2 {
-    width: 415px;
-    height: auto;
-    vertical-align: top;
-    border: 2px solid #a1a1a1;
-    padding: 5px; 
-    background: #FFF;
-    border-radius: 25px;
-    color: black;
-    font-family: Junicode, serif;
-    line-height: 100%;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-}
-}
 
 
 

@@ -12,8 +12,11 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
+       <link rel="shortcut icon" type="image/png" href="favicon.ico">
+        <link rel="stylesheet" href="/resources/demos/style.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link href="css/jquery-ui.css" rel="stylesheet">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
@@ -25,15 +28,21 @@
 
 
 <div id="header">
-    <img src="img/banner.png" alt="The Digital South English Legendary: An Interactive Digital Edition and Scholarly Resource" id="header_image">
+    <div id="headerImage">
+        <img src="images/banner.png" alt="The Digital South English Legendary: An Interactive Digital Edition and Scholarly Resource" id="header_image">
+    </div>
+    <div id= "siteTitleDiv">
+        <span id="siteTitle">The Digital South English Legendary</span>
+        <br>
+        <span id="siteSubtitle">An Interactive Critical Edition and Scholarly Resource</span>
+        <br>
+        <span id="siteAuthor">Edited and Developed by William E. Bolton</span>
+    </div>
 </div>
-<div id="moving-content-pad"></div>
-<div id="moble-header">The Digital South English Legendary</div>
     <nav id="nav">
-    <div id="right-header"><b>The Digital South English Legendary</b></div>
         <ul class="menu">
             
-            <a href="index.html"><li>Home</li></a>
+            <a href="index.html" class="firstMenuItem"><li>Home</li></a>
             
             <a href="about.html"><li id="current_page_ul">About</li></a>
             
@@ -65,8 +74,10 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/main.js"></script>       
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

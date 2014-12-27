@@ -11,9 +11,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
+        <link rel="shortcut icon" type="image/png" href="favicon.ico">
+        <link rel="stylesheet" href="/resources/demos/style.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link href="css/jquery-ui.css" rel="stylesheet">
 
     <!--Using Media Queries, if the viewport is smaller than 700px use another stylesheet-->
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -27,15 +29,22 @@
 
 
 <div id="header">
-    <img src="img/banner.png" alt="The Digital South English Legendary: An Interactive Digital Edition and Scholarly Resource" id="header_image">
+    <div id="headerImage">
+        <img src="images/banner.png" alt="The Digital South English Legendary: An Interactive Digital Edition and Scholarly Resource" id="header_image">
+    </div>
+    <div id= "siteTitleDiv">
+        <span id="siteTitle">The Digital South English Legendary</span>
+        <br>
+        <span id="siteSubtitle">An Interactive Critical Edition and Scholarly Resource</span>
+        <br>
+        <span id="siteAuthor">Edited and Developed by William E. Bolton</span>
+    </div>
 </div>
-<div id="moving-content-pad"></div>
-<div id="moble-header">The Digital South English Legendary</div>
+
     <nav id="nav">
-    <div id="right-header"><b>The Digital South English Legendary</b></div>
         <ul class="menu">
             
-            <a href="index.html"><li>Home</li></a>
+            <a href="index.html" class="firstMenuItem"><li>Home</li></a>
             
             <a href="about.html"><li>About</li></a>
             
@@ -51,93 +60,82 @@
 <div id="textPageWrapper">
   <div class="menuContainer">  
      
-            <h2 id="TextSelectorHeading">Text Viewer</h2>
-            <p id="TextSelectorDirections">Select a saint's life from the menu below to display to the right.</p>
+            <h2 id="TextSelectorHeading">Text View Application</h2>
+            <p id="TextSelectorDirections">Select a text or multiple texts from the menu to in a sortable and resizable window on the right.</p>
         <div class="displayButtonBox" id="displayButtonBox">
-            <button id="displayTextButton" class="displayTextButton">Display Text</button>
+            <button id="displayTextButton" class="displayTextButton">Display Text(s)</button>
             <button id="displayTextReset" class="displayTextReset">Reset Form</button>
         </div>
 
-    <div class="accordion">
-        <div class="bellow">
-            <input id="c1" type="checkbox" />
-                <label for="c1">Saint Botulf [bo]</label>
-            <div>
-                <section>
-                    <form name="form1" target="contentArea" id="botulfSelector">
+
+ <div id="accordion">
+  <h3>Saint Botulf [bo]</h3>
+  <div>
+    <form name="form1" target="contentArea" id="botulfSelector">
             
-                        <input type="radio" name="saintRadio" id="botulfRadioB" value="texts/botulf_b.html #textContainer">
-                        <label for="botulfRadioB"><span><span></span></span>Botulf B</label>
+        <input type="checkbox" name="saintCheckbox" id="Botulf:[B] Oxford, Bodleian Library Bodley 779, fols. 305v–306" value="texts/botulf_b.html #textContainer">
+        <label for="botulfCheckboxB">Bodley 779</label>
                         
-                        <br>
+        <br>
                         
-                        <input type="radio" name="saintRadio" id="botulfRadioE" value="texts/botulf_e.html #textContainer">
-                        <label for="botulfRadioE"><span><span></span></span>Botulf E</label>
+        <input type="checkbox" name="saintCheckbox" id="Botulf: [E] London, British Library, Egerton 1993, fols. 161r–162r" value="texts/botulf_e.html #textContainer">
+        <label for="botulfCheckboxE">Egerton 1993</label>
                         
-                        <br>
+        <br>
 
-                        <input type="radio" name="saintRadio" id="botulfRadioR" value="texts/botulf_r.html #textContainer">
+        <input type="checkbox" name="saintCheckbox" id="Botulf: [R] Cambridge, Trinity College, R.3.25 (605), fols. 68v–69r" value="texts/botulf_r.html #textContainer">
 
-                        <label for="botulfRadioR"><span><span></span></span>Botulf R</label>
+        <label for="botulfCheckboxR"><span>Cam., Trinity R.3.25</label>
                         
-                        <br>
+        <br>
                         
-                        <input type="radio" name="saintRadio" id="botulfRadioV" value="texts/botulf_v.html #textContainer">
-                        <label for="botulfRadioV"><span><span></span></span>Botulf V</label>
+        <input type="checkbox" name="saintCheckbox" id="Botulf: [V] Oxford, Bodleian Library Eng. poet. a.1, fols. 33va–33vb" value="texts/botulf_v.html #textContainer">
+        <label for="botulfCheckboxV">Bodleian Eng. poet. a.1</label>
                         
-                        <br>
-                    
-                </section>
-            </div>
-        </div>
-        <div class="bellow">
-            <input id="c2" type="checkbox" />
-                <label for="c2">Other Saints Coming Soon</label>
-        <div>
-           <header>
-             <p>In the mean time, here is the same form as above.</p>
-          </header>
-                <section>
-            
-                        <input type="radio" name="saintRadio" id="botulfRadioB" value="texts/botulf_b.html #textContainer">
-                        <label for="botulfRadioB"><span><span></span></span>Botulf B</label>
-                        
-                        <br>
-                        
-                        <input type="radio" name="saintRadio" id="botulfRadioE" value="texts/botulf_e.html #textContainer">
-                        <label for="botulfRadioE"><span><span></span></span>Botulf E</label>
-                        
-                        <br>
-
-                        <input type="radio" name="saintRadio" id="botulfRadioR" value="texts/botulf_r.html #textContainer">
-
-                        <label for="botulfRadioR"><span><span></span></span>Botulf R</label>
-                        
-                        <br>
-                        
-                        <input type="radio" name="saintRadio" id="botulfRadioV" value="texts/botulf_v.html #textContainer">
-                        <label for="botulfRadioV"><span><span></span></span>Botulf V</label>
-                        
-                        <br>
-                    </form>
-                </section>
-        </div>
-        </div>
-    </div>
+        <br>
+    </form>
+  </div>
+  <h3>More Saints to Come</h3>
+  <div>
+    <p>
+    
+    </p>
+  </div>
+  <h3>More Saints to Come</h3>
+  <div>
+    <p>
+    
+    </p>
+  </div>
+  <h3>More Saints to Come</h3>
+  <div>
+    <p>
+    
+    </p>
+  </div>
+</div>
 </div>
   
 <div id="contentAreaWrapper">
  
- <div class="contentArea" id="contentArea"> 
+ <div class="column" id="contentArea"> 
             
         </div>
+</div>
+
+  
+<div id="contentAreaWrapper">
+ 
+    <div id="contentArea" class="column"> 
+    </div>
+
 </div>
 
 <div class="clear"></div>
       
 </div>
 
-        <div id="just-for-testing" style="height:100px;">&nbsp;</div>
+        <div id="" style="height:100px;">&nbsp;</div>
 
         <div class="pageFooter">
             
@@ -145,11 +143,13 @@
             
         </div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/main.js"></script>        
+        
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

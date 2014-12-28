@@ -98,8 +98,10 @@ textarea {
    ========================================================================== */
 /* Basic Page Attribute */
 
+body {
+  background: #f9f9f9;
+}
 /* Footer */
-
 
 .pageFooter {
   width: 100%;
@@ -114,9 +116,24 @@ textarea {
   white-space: nowrap;
 }
 
-.basicPageWrapper {
-  padding-left: 50px;
+/* Basic Page Attributes */
 
+.basicPageWrapper {
+  font-family: Georgia, Arial, sans-serif;
+  width: 965px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #aaaaaa;
+  border-radius: 4px;
+  position: relative;
+  left: 8.5em;
+  top: 40px;
+  padding: 15px;
+  background: #fff;
+}
+
+.basicPageWrapper h1 {
+  margin-top: 0px;
 }
 
 /* Header */
@@ -159,7 +176,7 @@ textarea {
 }
 
 #siteSubtitle {
-    font-size: 40px;
+    font-size: 35px;
     line-height: 35px;
     font-family: Helvetica,Arial,sans-serif;
     font-weight: bold;
@@ -172,10 +189,6 @@ textarea {
 
 
 /* Nav-Bar */
-.firstMenuItem{
-  padding-left: 10em;
-  
-}
 
 nav {
     font-size: 1em;
@@ -185,6 +198,7 @@ nav {
     background: #B01F21;
     font-family: Helvetica,Arial,sans-serif;
     font-weight: bold;
+    white-space: nowrap;
 }
 
 nav ul {
@@ -216,6 +230,14 @@ nav ul li:hover {
 
 #current_page_ul {
     background-color: #631113;
+}
+
+#menuSpacer {
+  width: 7em;
+}
+
+#menuSpacer:hover {
+  background-color: #B01F21;
 }
 
 /* Middle English Text Styles ****REMOVE .. in path to font on site*** */
@@ -279,9 +301,45 @@ nav ul li:hover {
 .folioNumber, .folioColumn {
     float: right;
     font-weight: bold;
-
 }
 
+/* Popup notes */
+a.tooltips {
+  position: relative;
+  display: inline;
+}
+a.tooltips span {
+  position: absolute;
+  width: 300px;
+  color: #000000;
+  background: #FFBC05;
+  height: 50px;
+  line-height: 24px;
+  text-align: left;
+  visibility: hidden;
+  border-radius: 4px;
+  padding-left: 10px;
+}
+
+a.tooltips span:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -8px;
+  width: 0; height: 0;
+  border-right: 8px solid #FFBC05;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+a:hover.tooltips span {
+  visibility: visible;
+  opacity: .9;
+  left: 100%;
+  top: 50%;
+  
+  z-index: 999;
+}
 /* Text Display Button */
 
 .displayTextButton, .displayTextReset{
@@ -331,9 +389,10 @@ nav ul li:hover {
   border-color: #aaaaaa;
   position: relative;
   top: 30px;
-  left: 50px;
+  left: 85px;
   padding: 10px;
   border-radius: 4px;
+  background: #fff;
 }
 
 .menuContainer > header > h1 {
@@ -361,6 +420,10 @@ nav ul li:hover {
 }
 
 /* Content Area for Texts to Appear (not the container in the ME texts themselves)*/
+
+#textPageWrapper {
+  background: #f9f9f9;
+}
 
 #contentAreaWrapper {
     padding-bottom: 300px;
@@ -412,6 +475,7 @@ nav ul li:hover {
     margin: 0 1em 1em 0;
     height: 100px;
     width: 620px;
+    background: #fff;
   }
 
 /* ==========================================================================
